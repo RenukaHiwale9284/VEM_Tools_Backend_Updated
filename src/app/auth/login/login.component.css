@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2
+}
+
+
+form{
+  width: 300px;
+}
+
+
+/* page before idam */
+
+.patternImage {
+  width: 35%;
+  height: 143vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0rem !important;
+  right: 0rem !important;
+  zoom: 70%;
+}
+
+.pwcLogo {
+  width: 6rem !important;
+  float: left !important;
+}
+
+.mainContent {
+  color: black !important;
+  margin-top: 5rem !important;
+  /* border: 1px solid white !important; */
+  width: 30% !important;
+  margin-left: 10% !important;
+}
+
+.loginButton {
+  width: 100%;
+  background-color: #d04a02;
+  border: 1px solid #d04a02;
+}
+.loginButton:hover {
+  width: 100%;
+  background-color: #d04a02;
+  border: 1px solid #d04a02;
+}
+
+a{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+::ng-deep .previewCard{
+    width: 80% !important;
+    height: 100% !important;
+    zoom: 70%;
+    background-color: #f2f2f2 !important;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    color: black;
+    padding: 10px;
+    width: 55%;
+    font-weight: 500;
+}
+
+::ng-deep .p-checkbox .p-checkbox-box.p-highlight{
+    border-color: #d04a02 !important;
+    background: #d04a02 !important;
+    box-shadow: none !important;
+}
+::ng-deep .p-checkbox .p-checkbox-box{
+    box-shadow: none !important;
+}
+::ng-deep .p-button{
+    box-shadow: none !important;
+}
+
+body{
+  background-color: #f2f2f2 !important;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100% !important;
+  font-family: HelveticaNeue !important;
+  background-color: #f2f2f2;
+}
+
+.mainPage{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+}

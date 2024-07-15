@@ -1,0 +1,47 @@
+<div class="card">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <div class="field">
+        <mat-form-field appearance="fill">
+          <mat-label>Select Type</mat-label>
+          <mat-select
+            formControlName="type"
+            (selectionChange)="onTypeSelect($event.value)"
+          >
+            <mat-option value="Category">Category</mat-option>
+            <mat-option value="Subcategory">Subcategory</mat-option>
+            <mat-option value="Parameter">Parameter</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+   
+      <div style="width: 30rem !important" class="field">
+        <mat-form-field style="width: 30rem !important" appearance="fill">
+          <mat-label>Choose one</mat-label>
+          <input
+            type="text"
+            placeholder="Pick one"
+            aria-label="Number"
+            matInput
+            formControlName="fieldName"
+            [matAutocomplete]="auto"
+            style="width: 30rem !important"
+          />
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option
+              *ngFor="let option of filteredOptions | async"
+              [value]="option.name"
+              [matTooltip]="option.name"
+            >
+              {{ option.name }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+   
+      <section>
+        <button mat-raised-button color="primary" [disabled]="!searchForm.valid">
+          Select
+        </button>
+      </section>
+    </form>
+  </div>

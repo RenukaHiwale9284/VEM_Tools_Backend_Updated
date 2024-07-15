@@ -1,0 +1,9 @@
+.box-padding {
+    padding: 20px;
+}
+
+::ng-deep .mat-form-field {
+   
+    width: 100% !important;
+   
+}
